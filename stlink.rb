@@ -3,7 +3,7 @@ require 'formula'
 class Stlink < Formula
 
     homepage 'https://github.com/texane/stlink'
-    head 'https://github.com/texane/stlink.git'
+    head 'https://github.com/texane/stlink.git', :tag => "1.2.0"
 
     depends_on 'automake' => :build
     depends_on 'autoconf' => :build
