@@ -1,5 +1,4 @@
 class Nrf5xCli < Formula
-
   desc "Command Line Toolset for nRF5x"
   homepage "http://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF52832"
   url "http://www.nordicsemi.com/eng/nordic/download_resource/53406/3/56966576"
@@ -8,7 +7,7 @@ class Nrf5xCli < Formula
 
   def install
     cp_r [ "mergehex", "nrfjprog" ], "#{prefix}/"
-    bin.install "mergehex/mergehex" => "mergehex"
-    bin.install "nrfjprog/nrfjprog" => "nrfjprog"
+    bin.install_symlink "#{prefix}/mergehex/mergehex"
+    bin.install_symlink "#{prefix}/nrfjprog/nrfjprog"
   end
 end
