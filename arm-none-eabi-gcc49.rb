@@ -1,4 +1,4 @@
-class ArmNoneEabiGcc < Formula
+class ArmNoneEabiGcc49 < Formula
   desc "GCC for embedded ARM processors"
   homepage "https://launchpad.net/gcc-arm-embedded"
   url "https://launchpad.net/gcc-arm-embedded/4.9/4.9-2015-q3-update/+download/gcc-arm-none-eabi-4_9-2015q3-20150921-mac.tar.bz2"
